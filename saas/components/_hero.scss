@@ -15,11 +15,7 @@
 
 .hero__title {
     margin-bottom: 30px;
-    font-size: 44px;
-    line-height: 1.36;
-
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    @include font(null, 44px, 1.36, 0.06em);
     color: #FFFFFF;
 }
 
@@ -28,10 +24,7 @@
     width: 200px;
     height: 50px;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.88, 0.06em);
 
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -52,10 +45,7 @@
 
 .section__title {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(700, 36px, 1.17, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
